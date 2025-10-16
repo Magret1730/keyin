@@ -1,0 +1,116 @@
+.nav__box-containers {
+    margin-top: 40px;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.nav_box {
+    width: 113px;
+    height: 140px;
+    float: left;
+    margin: 1px;
+}
+
+#nav__box-colorless {
+    background-color: white;
+}
+
+#nav__box-color {
+    background-color: darkblue;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#nav__box-color a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-align:justify;
+    padding-left: 7px;
+    font-size: 18px;
+}
+
+#nav__box-color a:link {
+    background-color: darkblue;
+    color: white;
+}
+
+#nav__box-color a:hover {
+    text-decoration: underline;
+}
+
+#nav__box-color a:visited {
+    text-decoration: underline;
+}
+
+.nav_box-images {
+    width: 113px;
+    height: 140px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.gallery {
+    width: 950px;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.gallery__box {
+    width: 205px;
+    height: 170px;
+    float: left;
+    overflow: hidden;
+    margin-top: 15px;
+    border: 4px solid rgb(240, 235, 235);
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.gallery__box-travel {
+    margin-right: 3px;
+}
+
+.gallery__box-empty {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(201, 199, 199);
+    float: right;
+}
+
+.gallery__box-spacing {
+    margin-right: 40px;
+}
+
+.gallery__box-extra {
+    border: none;
+    padding-left: 7px;
+}
+
+.gallery__box h2 {
+    padding-bottom: 10px;
+    color: black;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.gallery__box p {
+    padding-bottom: 10px;
+    color: black;
+    line-height: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.gallery__box a {
+    background-color: gray;
+    padding: 8px 20px;
+    border: none;
+    font-weight: 700;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+}

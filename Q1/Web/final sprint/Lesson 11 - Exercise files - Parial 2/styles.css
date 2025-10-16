@@ -1,0 +1,170 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.mainbox {
+  width: 1000px;
+  /* height: 600px; will be removed later */
+  background-color: white;
+  border: 3px solid gray;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+header {
+  width: 996px;
+  height: 200px;
+  background-color: white;
+}
+
+nav {
+  width: 996px;
+  height: 40px;
+  background-color: lightblue;
+  margin-top: 10px;
+}
+
+nav .navleft {
+  width: 498px;
+  height: 40px;
+  background-color: white;
+  text-align: left;
+  padding: 6px;
+  float: left;
+}
+
+nav a:link {
+  color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  text-decoration: none;
+}
+
+nav .navright {
+  width: 498px;
+  height: 40px;
+  background-color: white;
+  text-align: right;
+  padding: 6px;
+  float: right;
+  color: black;
+  font-weight: 700;
+  font-size: 16pt;
+}
+
+main {
+  width: 995px;
+  height: 425px;
+  background-color: lightyellow;
+}
+
+/* The main section will contain 3 divs. */
+
+.mainleft {
+  width: 490px;
+  height: 250px;
+  background-color: lightcyan;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+  text-align: center;
+}
+
+.mainleft .stylemsg {
+  font-size: 16pt;
+  font-weight: 700;
+  color: Green;
+}
+
+.mainleft h1 {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 48pt;
+  font-style: italic;
+  color: Green;
+  text-align: center;
+}
+
+.mainleft a:link {
+  color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  text-decoration: underline;
+}
+
+.mainleft a:visited {
+  color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  text-decoration: underline;
+}
+
+.mainleft a:hover {
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  font-size: 16pt;
+  text-decoration: none;
+}
+
+.mainright {
+  width: 488px;
+  height: 250px;
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+  text-align: center;
+}
+
+.mainright button {
+  width: 175px;
+  height: 40px;
+  background-color: orange;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+.mainbottom {
+  width: 983px;
+  height: 150px;
+  background-color: lightseagreen;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+}
+footer {
+  width: 996px;
+  height: 80px;
+  background-color: black;
+  margin-top: 10px;
+}

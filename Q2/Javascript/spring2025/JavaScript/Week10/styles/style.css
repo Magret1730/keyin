@@ -1,0 +1,25 @@
+body {
+  background-color: bisque;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#box1,
+#box2 {
+  border: 1px solid black;
+  padding: 20px;
+  max-width: 200px;
+  text-align: center;
+}
+
+#box1Count,
+#box2Count {
+  color: green;
+  font-size: 5rem;
+}

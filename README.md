@@ -1,0 +1,2 @@
+## Keyin Projects Repository
+This repository serves as a central workspace containing all course and project files organized across multiple terms. Each folder (Q1, Q2, Q3) represents a specific academic quarter, including subprojects, assignments, and development exercises.

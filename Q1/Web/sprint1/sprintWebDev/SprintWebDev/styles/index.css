@@ -1,0 +1,74 @@
+/* Flexbox for section content */
+.section-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 4rem 0;
+    justify-content: space-around;
+}
+
+/* Image styling for section */
+.section-content img {
+    width: 40%; /* Image takes up 35% of the space */
+    border-radius: 50%;
+}
+
+.section-image-height {
+    height: 60vh;
+}
+
+.section-content h2 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure text is on the left side by adjusting its width */
+.text-content {
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(3, 109, 21, .2);
+}
+
+.text-content h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.text-content p {
+    font-size: 1rem;
+}
+
+.first {
+    margin-right: 200px;
+}
+
+.second {
+    margin-left: 200px;
+}
+
+.divider {
+    border-top: 3px solid rgb(3, 109, 21);
+}
+
+/* Styling for the image row */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container {
+    width: 30%; /* Each image container takes 30% of the row */
+    border-radius: 8px; /* Rounded corners for the container */
+    padding: 7rem .3125rem;
+    
+}
+
+.image-container img {
+    width: 100%; /* Make images fill their container */
+    border-radius: 8px; /* Rounded corners for the images */
+    box-shadow: 1px 1px grey;
+    height: 40vh;
+}

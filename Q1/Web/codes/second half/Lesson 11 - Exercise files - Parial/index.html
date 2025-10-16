@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Always set up the title and link to
+         the style sheet up front. -->
+    <title>Lesson 11 Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Access the .js file with a statement in the head section, 
+         similar to where we place the css file. 
+         
+         Now any js code is set up as a function in the file.
+         You can also have multiple files all referenced here. -->
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="mainbox">
+      <header>
+        <img src="Images/Header.jpg" width="996px" height="200px" />
+      </header>
+
+      <nav>
+        <div class="navleft">
+          <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="about.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="navright">
+          <script>
+            ShowGreeting();
+          </script>
+        </div>
+      </nav>
+
+      <main>
+        <div class="mainleft">
+          <!-- THe # in the href tells the computer to stay on the same page. -->
+          <a href="#" onclick="ShowQuote1();">View 1</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" onclick="ShowQuote2();">View 2</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" onclick="ShowQuote3();">View 3</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" onclick="ShowQuote4();">View 4</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" onclick="ClearMsg();">Clear</a>
+
+          <br /><br />
+
+          <p id="txtQuote" class="stylemsg"></p>
+        </div>
+
+        <div class="mainright">
+          <button id="btnShowInv" onclick="ShowInv();">Show Inventory</button>
+
+          <br /><br />
+          <p id="ShowInv"></p>
+        </div>
+
+        <div class="mainbottom"></div>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

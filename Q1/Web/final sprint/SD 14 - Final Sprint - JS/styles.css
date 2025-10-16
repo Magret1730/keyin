@@ -1,0 +1,259 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: aquamarine; */
+  background-color: #f5f7fa;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 15px;
+  /* display: inline-block; */
+}
+
+.mainbox {
+  width: 1006px;
+  /* height: 600px; will be removed later */
+  background-color: #ffffff;
+  border: 3px solid #3a0a4a;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* The header section. */
+header {
+  width: 1000px;
+  margin: 0 auto;
+  height: 200px;
+  background-color: #e6e6fa;
+}
+
+/* The header is made up of a message bar and the banner image. */
+.tophead {
+  width: 1000px;
+  height: 40px;
+  /* background-color: #b19cd9; */
+  background-color: #9370db;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+
+.tophead-quotes {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tophead-images {
+  display: block;
+  object-fit: cover;
+  margin-top: 10px;
+  height: 160px;
+}
+
+/* The navigation section. */
+nav {
+  width: 1000px;
+  height: 50px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.navleft {
+  width: 493px;
+  height: 48px;
+  background-color: #9370db;
+  float: left;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navleft a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navleft a:hover {
+  background-color: #6a0dad;
+  border-radius: 5px;
+}
+
+.navright {
+  width: 495px;
+  height: 48px;
+  background-color: #9370db;
+  margin-left: 5px;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navright input[type="text"] {
+  margin-right: 10px;
+  padding: 5px;
+  width: 250px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.navright input[type="text"]:focus {
+  border-color: #6a0dad;
+}
+
+main {
+  width: 1000px;
+  height: 625px;
+  /* background-color: lightyellow; */
+  background-color: #f5f0ff;
+}
+
+/* The main section will contain 3 divs. */
+
+.maintopleft {
+  width: 490px;
+  height: 300px;
+  background-color: #b19cd9;
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
+
+.maintopleft button {
+  color: #9370db;
+  background-color: white;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid #9370db;
+  width: 35%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.maintopleft button:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.maintopleft-output {
+  margin-top: 15px;
+  color: white;
+  font-size: 1.1rem;
+}
+/* 
+.mainright {
+  width: 490px;
+  height: 300px;
+  background-color: #b19cd9;
+  padding: 10px;
+  margin: 5px;
+  float: left;
+} */
+
+.mainright {
+  width: 490px;
+  height: 610px;
+  /* background-color: #b19cd9; */
+  background-color: #e6e6fa;
+  /* background-color: lightgray; */
+  /* border: 1px solid #4b0082; */
+  padding: 10px;
+  margin: 5px;
+  float: right;
+}
+
+.mainright button {
+  color: #9370db;
+  background-color: white;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid #9370db;
+  width: 35%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.mainright button:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.mainright-output {
+  margin-top: 15px;
+  /* color: white; */
+  color: #6a0dad;
+  font-size: 1.1rem;
+}
+
+.mainbottomleft {
+  width: 490px;
+  height: 300px;
+  background-color: #b19cd9;
+  /* background-color: lightseagreen; */
+  /* border: 1px solid #663399; */
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
+
+footer {
+  width: 1000px;
+  height: 80px;
+  background-color: black;
+
+  color: white;
+
+  /* padding: 30px 20px;
+  margin-top: 40px; */
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials {
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.9em;
+}

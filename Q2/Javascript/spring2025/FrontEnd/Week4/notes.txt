@@ -1,0 +1,59 @@
+Flexbox model is one-dimentional! Either make rows or columns..
+
+CSS GRID:
+    That enables both two dimensional flexibility...
+    i)Grid-container
+    ii) Grid-items
+    iii) Gaps
+
+
+    https://www.youtube.com/watch?v=98R0KsZFJX0 
+
+
+Display: inline-block;
+
+#div-1 {
+  display: block;
+  background-color: red;
+  /* height: 400px;
+  width: 500px; */
+}
+
+#span-1 {
+  display: inline-block;
+  background-color: cyan;
+  height: 100px;
+  width: 100px;
+  /* height and width don't work with inline property.. */
+}
+
+#span-2 {
+  background-color: purple;
+}
+#div-2 {
+  background-color: green;
+}
+img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+
+  <div id="div-1">This is div1</div>
+    <span id="span-1">This is span1</span>
+    <img src="../images/image1.jpg" alt="tree" width="300" />
+    <span id="span-2">This is span2</span>
+    <div id="div-2">This is div2</div>
+
+
+    Position:
+     1. static: default position...
+     2. relative: Takes its initial position and can be translated from there on..
+     3.absolute: By default it is positioned relative to its closest ancestor(usally the body tag). If you define position relative on a parent element then it is going to be positioned in that context.
+     4. fixed: Rips out the element from the document and fixes it to the viewport..
+     5.sticky: switched between position static and fixed...
+
+
+
+     WEEK 5 ... DOM (Document Object Model)

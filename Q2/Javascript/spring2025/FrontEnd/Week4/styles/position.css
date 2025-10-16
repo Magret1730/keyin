@@ -1,0 +1,43 @@
+.box {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 20px auto;
+  /* position: relative; */
+}
+
+.item1,
+.item2 {
+  width: 200px;
+  height: 200px;
+}
+
+.item1 {
+  /* position: fixed; */
+  background-color: bisque;
+}
+
+.item2 {
+  /* position: absolute; */
+  background-color: aquamarine;
+  /* left: 200px;
+  top: 200px; */
+}
+
+nav {
+  position: sticky;
+  /* left: 100px; */
+  top: 10px;
+  width: 500px;
+  height: 50px;
+  border: 1px solid green;
+  background-color: blanchedalmond;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+}

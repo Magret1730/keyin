@@ -1,0 +1,24 @@
+//   let's create object of this class..
+
+  let book1 = new Book("JavaScript", "Tim", 12345);
+
+  console.log(book1); //did I need to call constructor explicitly?
+  console.log(book1.getBook()); //getBook is a normal member function, so I always need to call it explicitly...
+
+  //   console.log(book1.title);
+  //   console.log(book1.author);
+  //   console.log(book1.isbn);
+  //   let book2 = new Book("Java", "Ivor", 434343);
+  //   console.log(book2);
+
+Explicit method.. NOT CONSTRUCTOR..
+   getBook() {
+      return `Book Title:${this.title} Book Author:${this.author} Book ISBN:${this.isbn}`;
+    }
+
+
+
+        Book.testMethod(); //class level method?
+    // Math.round()... round is a static method in side Math class, and we call it without crreatin object of Math class..
+
+    If testMthod is defined as static..

@@ -1,0 +1,34 @@
+.section-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-box img {
+    width: 30%;
+    border-radius: 8px;
+    height: 50vh;
+}
+
+.text-box {
+    max-width: 55%;
+}
+
+.text-box h2 {
+    color: rgb(3, 109, 21);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.text-box li {
+    font-size: 16px;
+}

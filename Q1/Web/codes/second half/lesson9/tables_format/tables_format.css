@@ -1,0 +1,36 @@
+/* CSS for the table. */
+ 
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 2px;
+}
+ 
+/* styles for the receipt for The Gym. */
+.receipttable {
+  width: 600px;
+  margin: auto;
+  font-family: "Courier New"; /* Use a non-proportional font to line up spacing. */
+  font-size: 18pt;
+}
+ 
+.receipttable .mainhead {
+  background-color: lightblue;
+  text-align: center;
+ 
+  font-weight: 700;
+}
+ 
+.receipttable .lefttext {
+  text-align: left;
+}
+ 
+.receipttable .righttext {
+  text-align: right;
+}
+ 
+.receipttable .centertext {
+  text-align: center;
+}

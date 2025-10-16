@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "d6ce",
+      "text": "Meeting with Director",
+      "day": "July 30,2025",
+      "reminder": true
+    },
+    {
+      "id": "1e98",
+      "text": "Friend's marriage",
+      "day": "Aug 1,2025",
+      "reminder": false
+    },
+    {
+      "id": "ccc3",
+      "text": "Kids event",
+      "day": "August 7,2025",
+      "reminder": true
+    }
+  ]
+}

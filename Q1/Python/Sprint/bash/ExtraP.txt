@@ -1,0 +1,4 @@
+This is the ExtraP file.
+It mentions RetailCost, which is used to calculate the price after tax.
+
+More information will follow in the future.

@@ -1,0 +1,20 @@
+.mainbox {
+    width: 1000px;
+    border: 2px;
+    background-color: rgb(164, 164, 252);
+    color: rgb(14, 7, 83);
+}
+
+h1,
+h3 {
+    font-family: "Arial Black";
+    color: red;
+    background-color: blueviolet;
+}
+
+p,
+li {
+    font-family: "Calibri";
+    font-size: 12px;
+    line-height: 1.5rem;
+}

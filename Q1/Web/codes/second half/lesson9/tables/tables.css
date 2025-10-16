@@ -1,0 +1,48 @@
+/* Here is the code for the css for this table. */
+ 
+/* This is a general style that is applied to all tables. */
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 2px;
+}
+ 
+/* Styles for the Class Schedule table. */
+.scheduletable {
+  width: 700px;
+  margin: auto;
+  font-size: 14pt;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+ 
+.scheduletable th,
+td {
+  height: 40px;
+  padding-left: 10px;
+}
+ 
+.scheduletable .mainhead {
+  text-align: center;
+  font-size: 16pt;
+  background-color: rgb(245, 216, 245);
+}
+ 
+.scheduletable .colhead {
+  text-align: center;
+  color: white;
+  background-color: rgb(64, 64, 184);
+}
+ 
+.scheduletable .lightblue {
+  background-color: lightblue;
+}
+ 
+.scheduletable .white {
+  background-color: white;
+}
+ 
+.scheduletable .centertext {
+  text-align: center;
+}

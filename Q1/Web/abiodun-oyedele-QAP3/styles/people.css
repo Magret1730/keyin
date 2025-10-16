@@ -1,0 +1,29 @@
+.people-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.people-section h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.people-section p {
+    font-size: 24px;
+    color: #666;
+}
+
+.people-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 3rem 0;
+}
+
+.people-image {
+    width: 300px;
+    height: 52vh;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Front-end Developer Kit</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="mainbox">
+      <header >
+        <div class="tophead">
+          <p class="tophead-quotes" id="quotes"></p> 
+          <img class="tophead-images" id="slideshow" src="Images/family0.jpg" />
+        </div>
+      </header>
+
+      <nav>
+        <div class="navleft">
+          <a href="index.html">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="navright">
+          <input type="text" placeholder="Search...">
+        </div>
+      </nav>
+
+      <main>
+        <div class="maintopleft">
+          <button id="maintopleft-button" class="maintopleft-button" onclick="tellMeAStory();">Tell Me a Story</button>
+          <div id="maintopleft-output" class="maintopleft-output"></div>
+        </div>
+
+        <div class="mainright">
+          <button id="mainright-button" class="mainright-button" onclick="loanAnalysis();">Loan Analysis</button>
+          <div id="mainright-output" class="mainright-output"></div>
+        </div>
+
+        <div class="mainbottomleft" id="bottomLeft">
+          <button id="generatePaletteBtn" onclick="generateColorPalette()">Generate Family Mood Colors</button>
+          <div id="colorPalette" class="mainbottomleft-palette"></div>        
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-box">
+          <div class="footer-contact">
+            <p>Email: familylove@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+          </div>
+          <div class="footer-socials">
+              <a href="#">Facebook</a> |
+              <a href="#">Instagram</a> |
+              <a href="#">YouTube</a>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2025 Family Moments. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

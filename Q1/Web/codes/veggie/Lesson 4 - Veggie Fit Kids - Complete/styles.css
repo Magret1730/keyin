@@ -1,0 +1,358 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: beige;
+}
+
+.mainbox {
+  width: 1000px;
+  height: 1200px; /* will be removed later */
+  background-color: beige;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/*  3 divs in he navigation section for logo, menu, and social media links. */
+.navlogo {
+  width: 250px;
+  height: 60px;
+  background-color: beige;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: left;
+}
+
+.navmenu {
+  width: 500px;
+  height: 60px;
+  background-color: beige;
+  padding-top: 8px;
+  float: left;
+}
+
+.navsocial {
+  width: 250px;
+  height: 60px;
+  background-color: beige;
+  padding-right: 25px;
+  float: left;
+}
+
+nav a:link {
+  color: black;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: black;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: beige;
+  background-color: black;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* the header section is just one box with a heading or two.  Create a box, or style the header section. 
+
+.headerbox {
+  width: 1000px;
+  height: 200px;
+  background-color: purple;
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+  */
+/* this would require that I place a div tag in the header section of the html document. */
+
+/* The other method is just to place the style right in the header tag.   */
+header {
+  width: 1000px;
+  height: 250px;
+  background-color: purple;
+  padding-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+header h1 {
+  color: white;
+  font-family: "Comic Sans MS";
+  text-align: center;
+}
+
+header p {
+  color: white;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+/* This is the block for the Dr. Yami section. It requires two boxes - on for their name and one for their quote */
+.yami {
+  width: 250px;
+  height: 130px;
+  background-color: rgb(222, 124, 70);
+  padding-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.yami h2 {
+  color: white;
+  text-align: center;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.yamiquote {
+  width: 750px;
+  height: 130px;
+  background-color: rgb(222, 124, 70);
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.yamiquote p {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.yamiquote a:link {
+  color: white;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.yamiquote a:visited {
+  color: white;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.yamiquote a:hover {
+  color: orange;
+  background-color: white;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.yamiquote .btext {
+  font-weight: 700;
+}
+
+/* The services section with the pictures on the top, and the 2 boxes below for Dr. Yami in action.  Notice the indented section on both sides.
+
+Create a style for the section, and then place the objects in it. */
+.servicesection {
+  width: 900px;
+  height: 410px;
+  background-color: beige;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.servicesection .imgright {
+  margin-right: 10px;
+}
+
+.servicesection .imgleft {
+  margin-left: 10px;
+}
+
+.servicesection .imgboth {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.servicesection h2 {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: orange;
+  padding-left: 15px;
+}
+
+.servicesection p {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.servicesection a:link {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: white;
+  background-color: rgb(222, 124, 70);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.servicesection a:visited {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: white;
+  background-color: rgb(222, 124, 70);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.servicesection a:hover {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: rgb(222, 124, 70);
+  background-color: beige;
+  border: 1px solid rgb(222, 124, 70);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Styles for the together box. */
+.togetherbox {
+  width: 1000px;
+  height: 70px;
+  background-color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.togetherbox h1 {
+  color: white;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  font-size: 30pt;
+}
+
+/* Styles for the benefits and radio section */
+.benradio {
+  width: 900px;
+  height: 300px;
+  background-color: beige;
+  margin: 10px 50px 10px 50px;
+  float: left;
+}
+
+.benradiobox {
+  width: 430px;
+  height: 280px;
+  background-color: rgb(75, 163, 75);
+  padding: 50px 15px 40px 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: left;
+}
+
+.benradiobox h2 {
+  color: white;
+  font-size: 22pt;
+}
+
+.benradiobox a:link {
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.benradiobox a:visited {
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.benradiobox a:hover {
+  color: rgb(75, 163, 75);
+  background-color: white;
+  border: 2px solid white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Styles for the footer section. */
+footer {
+  width: 1000px;
+  height: 200px;
+  background-color: rgb(222, 124, 70);
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.footerleft {
+  width: 200px;
+  height: 170px;
+  background-color: rgb(222, 124, 70);
+  float: left;
+}
+
+.footermiddle {
+  width: 450px;
+  height: 170px;
+  background-color: rgb(222, 124, 70);
+  padding-top: 30px;
+  float: left;
+}
+
+.footermiddle p {
+  color: white;
+}
+
+.footerright {
+  width: 300px;
+  height: 170px;
+  background-color: rgb(222, 124, 70);
+  padding-top: 30px;
+  text-align: right;
+  float: left;
+}
+
+.footerright p {
+  color: white;
+}
+
+.footerright a:link {
+  color: rgb(222, 124, 70);
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footerright a:visited {
+  color: rgb(222, 124, 70);
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footerright a:hover {
+  color: white;
+  background-color: rgb(222, 124, 70);
+  border: 1px solid white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}

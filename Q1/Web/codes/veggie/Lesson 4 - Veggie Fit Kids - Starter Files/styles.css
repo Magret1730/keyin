@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.mainbox {
+  width: 1000px;
+  height: 600px; /* will be removed later */
+  background-color: white;
+  border: 3px solid gray;
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+}

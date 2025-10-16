@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  background-color: #A288A6;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #1C1D21;
+  font-weight: bold;
+}
+
+.home-header {
+  text-align: center;
+  margin: 3rem auto;
+  font-size: 2rem;
+}

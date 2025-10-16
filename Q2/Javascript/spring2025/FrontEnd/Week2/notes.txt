@@ -1,0 +1,77 @@
+<h1>First heading</h1>
+    <h1 id="s2">Second &nbsp; &nbsp; &nbsp; heading</h1>
+    &lt;html&gt; &lt;head&gt;&lt;/head&gt; &lt;/html&gt; &copy;&reg; &euro;
+    &trade;
+
+
+    Semantic Elements:
+     help the browser and other accessibility tools to know about important structural information..
+
+     <div>
+     <a href="#">About me</a>
+     ..
+     ..
+     <div>
+
+     <nav>
+        This will be an area where I will find all the links
+
+     </nav>
+
+
+      <header>
+      <!-- introductory material at the top of a web page - Company ICON and company tag line and introduction the give this page.. -->
+    </header>
+
+    <nav>
+      <!-- content related to navigation(a  menu, index, links etc) -->
+    </nav>
+
+    <main>
+      <!-- the main content of the document -->
+    </main>
+
+    <section>
+      <!-- a group of related elements in adocument representing one section of a whole document -->
+    </section>
+
+    <footer>
+      <!-- end material(author, copyright,links,etc) -->
+    </footer>
+
+
+    Tables in HTML:
+     To represent tablular data iin html we use <table>..</table>
+
+    <caption> the optional title of the table</caption>..
+    <thead>
+    row(s) at the top of the table(header row or rows)
+    </thead>
+
+    <tbody>.. rows that form the main body of the tables (the content of the table) </tbody>
+
+    <tfoot> row(s) athe bottom of the table</tfoot>
+
+     <tr></tr>
+     <td></td>
+     <th></th>
+
+    Forms in HTML:
+    HTML Forms:
+        To take input from users
+
+    <form></form>...<input/>... other markup
+
+    Attributes of form element:
+        i) action: what we want to do with data when the form is submitted..you want to send data to another page... hyou want to email the data to your email address, or you want to read the data in a script to do some action on the page.....on Google... action = "/search" method = "GET"
+        ii) method: can be either "get" or "post". 
+        
+        "get" method sends data as the part of the URL...
+        "post" method sends data as the part of the body of the page....
+
+    <input id="xyz" name="xyz"/>
+     id is for accessing this element in our scripts (CSS, JS)
+     name is used for accessing the value of the control while we receive data 
+
+
+     given-name=Noman&email=natique%40conestogac.on.ca&date=2025-05-14&position=IT%20+Technician&upload=Course+Outline+Front-End+Development.docx&comments=Thanks+for+giving+me+this...

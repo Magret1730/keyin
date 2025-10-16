@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Anything that starts with <!... it is neither a tag .. NOR an element -->
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      h1,
+      h2 {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Notes May 5,2025</h1>
+    <a href="#date">Date & Time</a> | <a href="#address">Address</a>|<a
+      href="#code"
+      >Code</a
+    >|<a href="#abbreviations">Abbreviations</a>|<a href="#super"
+      >Super-Sub Scripts</a
+    ><a href="#quotations">Quotations</a>|<a href="#linking">Linking</a>|
+    <a href="#headings">Heading Levels</a>| <a href="#media">Media</a> |
+    <a href="./pages/may8.html">May 8 notes</a> |
+    <a href="./pages/about.html">About me</a>
+
+    <h2 id="date">Date & Time</h2>
+    <time>May 5,2025</time> <br />
+    <time datetime="06/05/2025 17:00">Tomorrow at 5pm</time> <br />
+    <time datetime="04/05/2025">Yesterday</time>
+
+    <h2 id="address">Address</h2>
+
+    <address>
+      106 Queen's Road,<br />
+      NL N0B1E2
+    </address>
+
+    <h2 id="code">Code</h2>
+
+    <code>console.log("Hello javascript");</code>
+
+    <h2 id="abbreviations">Abbreviations</h2>
+    <abbr title="Hyper Text Markup Language">HTML</abbr> <br />
+    <abbr title="Cascading Style Sheet">CSS</abbr>
+
+    <h2 id="super">Sub Super Scripts</h2>
+    H<sub>2</sub>O <br />
+    X<sup>3</sup>
+
+    <h2 id="quotations">Quotations</h2>
+    <p>This is a <q>Quote</q></p>
+    <blockquote>This is another quotation in blockquote</blockquote>
+
+    <h2 id="linking">Linking in HTML</h2>
+    Linking in HTML can be of two types:
+    <ol>
+      <li>External Linking</li>
+      <li>Internal Linking</li>
+    </ol>
+    <h3>External Linking</h3>
+    <a href="https://www.google.com">Google</a> <br />
+    <a href="https://www.twitter.com">Twitter</a>
+
+    <h3>Internal Linking</h3>
+    When we link within a page, or within our website..
+
+    <h2 id="headings">Heading Levels</h2>
+    There are six levels headings staring with &lt;h1&gt; through &lt;h6&gt;
+    <br />
+    &lt;h1&gt; is the biggest level in priority regardless of its size
+
+    <h2>Paragraphs</h2>
+    The &lt;p&gt; &lt;/p&gt; element is used to make paragraphs in html. The
+    quickest way to have some testing text in by using lorem ipsum
+
+    <h2 id="media">Media</h2>
+    <h3>Images</h3>
+    <img src="./images/image4.jpg" alt="Tree" width="300" />
+    <figure>
+      <figcaption>Picture of a Tree</figcaption>
+      <img src="./images/image2.jpg" alt="Tree2" width="300" />
+    </figure>
+
+    <h3>Videos</h3>
+    <h4>Video element</h4>
+    <video src="./videos/abc.mp4" width="300" autoplay controls></video>
+    <h4>Youtube Videos</h4>
+    <iframe
+      width="300"
+      height="315"
+      src="https://www.youtube.com/embed/OMbY_OHYrf0?si=nhFUxtgJdQ3WJVF1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="300"
+      height="315"
+      src="https://www.youtube.com/embed/AvlL6VBF5Do?si=AFVhDYvSmFPM3hST"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <h3 id="audio">Audio</h3>
+    <p>For your own study</p>
+  </body>
+</html>

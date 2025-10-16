@@ -1,0 +1,29 @@
+.safari-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.safari-section h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.safari-section p {
+    font-size: 24px;
+    color: #666;
+}
+
+.safari-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 3rem 0;
+}
+
+.safari-image {
+    width: 300px;
+    height: 52vh;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}

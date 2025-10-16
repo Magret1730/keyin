@@ -1,0 +1,26 @@
+<!-- The header ejs template is included to ensure our CSS and fonts are loaded -->
+<%- include('partials/header') %>
+    <body>
+        <main class="main-content">
+            <section class="hero">
+                <h1 class="hero__title">😎 MoodVibes Tracker 🙂</h1>
+                <p class="hero__subtitle">Track your emotions, improve your wellbeing</p>
+                <span class="hero__date"> <%=currentDate%></span>
+            </section>
+    
+            <section class="card">
+                <h2 class="card__greeting">We’re happy you’re here!</h2>
+                <p class="card__message"><%= message %></p>
+    
+                <div class="button-group">
+                    <button class="btn">
+                        <a href="/mood">🫶 Add Mood</a>
+                    </button>
+                    <button class="btn">
+                        <a href="/summary">🤩 View Summary</a>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

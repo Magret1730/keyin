@@ -1,0 +1,33 @@
+Object Oriented Programming in JavaScript (OOP)
+    OOP is based on the concepts of Class and Object:
+
+    Class: combination of Code and Data (Code: Functions, Data: Variables)
+
+    Object: "class" is not USABLE by itself, rather we create "Objects" of the class, that emulate the behavior of the class(objects have all the properties and methods of a class) let name1 = new String("Bob Smith");... name1 is the "object" of a class "String".
+    let numbers = new Array(1,23,4); ... numbers is an object of "Array" class...
+    Objects are also called "instantiation of the class".. instances of the class...
+
+In classical javascript( NOT ES5 ES6) there was no concept of a class. But there was concept of a special method called "constructor" that could be used to create objects.
+ "this" keyword is used to refer "itself"...refers to current working object....
+
+"We use or not "login and logout functions", they automatically become part of the code of created object. 
+
+Prototypical Inheritance:
+The functions/properties that you dont want to be included in the body of the object. Store them in "PROTOTYPE".. this way they wont become the part of the object, BUT they will be available whenever you need them.
+
+
+Practice Question1:
+Write a constructor function "Person", that takes name and age as parameters, and creates object with these two fields only.
+Then write a function addPerson(name,age) that receives two parameters and by using those two parameters it creates a new object of Person method, and pushes the newly create object into an array called people = [];
+
+Practice Question2:
+Write a constructor function "Car" that has following properties:
+    1. make(string)
+    2. model(string)
+    3. year(number)
+
+    Add a method getCarInfo() that returns a string combining all the properties
+    For example:
+
+    let car1 = new Car("Toyota", "Corolla",2019);
+    console.log(car1.getCarInfo()); .....//outputs "Toyota Corolla, 2019"

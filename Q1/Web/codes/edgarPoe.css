@@ -1,0 +1,35 @@
+body {
+    background-image: url(BIImage1.jpg);
+}
+
+.mainbox {
+    width: 1000px;
+    height: 600px; /* Determined by content - Give a height
+                      initially just to see it - removed later */
+    background-color: green;
+
+    border: 4px solid black;
+    /*  OR  */
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    /*  Also set each border different */
+    border-left-style: dotted;
+    border-right-style: dashed;
+    border-right-color: red;
+
+    padding: 15px;
+    /* Can also do padding-left: 15px;
+                   padding-right: 30px;
+                   : 
+       Can also do padding: 10px 15px 10px 15px;
+    */
+
+    margin: auto; /* centers the box on the page */
+}
+
+/* Place the box in the html document using
+     <div class="mainbox">
+
+     </div>
+   Around the entire document in the body tag.*/

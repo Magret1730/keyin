@@ -1,0 +1,36 @@
+body {
+    background-color: silver;
+    color: blue;
+  
+    margin-left: 100px;
+    margin-right: 100px;
+  
+    /*  margin: 100px; - sets all margins to 100
+          margin-top: 20px; - just sets the top margin
+          margin: 0px 100px 0px 100px;  - sets all 4 margins to different options - TRBL
+      */
+  }
+  
+  h1,
+  h3 {
+    color: red;
+    font-family: Times, "Times New Roman", Cambria, Cochin, Georgia, serif;
+  }
+  
+  p {
+    font-family: Calibri, Helvetica, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+      sans-serif;
+    font-size: 12pt;
+  }
+  
+  a:link,
+  a:visited {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: silver;
+    background-color: blue;
+  }
+  

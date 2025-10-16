@@ -1,0 +1,18 @@
+Create 3 files – one called PySample.py, one called ExtraP.txt, and a third called Stuff.py. Add
+code to each python program and add some text to txt file. Add the words “RetailCost” and
+“getName” in one or more of these files.
+
+• What is the current directory? List the contents of the current directory. List the contents of the
+current directory with any hidden files. List the contents of the current directory with any hidden
+files. List the files with the permissions displayed.
+
+• Display the full contents of each of the files created above. Display only the first 3 lines of
+PySample.py and the last 3 lines of Stuff.py. Display the last 3 lines of all files. If you have a file
+that is large, what options are available to have it appear one screen at a time?
+
+• Create a directory called PythonCurrent, one called PythonDone and one called TextFiles. In the
+PythonDone directory create 2 other directories called 2022 and 2023. In the TextFiles directory
+create 2 other directories called Python and Other.
+
+• Change the current directory to PythonDone – notice how the prompt changes to show the
+current directory. Use pwd to confirm you are in the PythonDone directory. List the files.

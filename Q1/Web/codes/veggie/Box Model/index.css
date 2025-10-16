@@ -1,0 +1,139 @@
+/* This style affects every object I place on the page. */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.mainbox {
+  width: 1000px;
+  height: 2000px;
+  background-color: white;
+  border: 3px solid gray;
+  padding: 15px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.otherbox {
+  width: 400px;
+  height: 100px;
+  background-color: green;
+  /* Give the box an ititial color so we can see it. */
+}
+
+.otherboxborder {
+  width: 400px;
+  height: 100px;
+  background-color: green;
+  /* Give the box an ititial color so we can see it. */
+
+  border: 5px solid red;
+  /* The border with a border-box is inside the dimensions of the box */
+}
+
+.otherboxpadding {
+  width: 400px;
+  height: 100px;
+  background-color: green;
+  /* Give the box an ititial color so we can see it. */
+
+  border: 5px solid red;
+
+  padding: 10px;
+  /* The padding also appears inside the box/border. */
+}
+
+/* Adding border and padding to a border-box reduces the width of the box
+   by the border * 2 + padding * 2.
+   
+   In the example 400 - 5*2 - 10*2 = 370 */
+
+.otherboxmargin {
+  width: 400px;
+  height: 100px;
+  background-color: green;
+  /* Give the box an ititial color so we can see it. */
+
+  border: 5px solid red;
+
+  padding: 10px;
+  /* The padding also appears inside the box/border. */
+
+  margin: 20px;
+  /* The margin appear outside the box. */
+}
+
+.otherboxrounded {
+  width: 400px;
+  height: 100px;
+  background-color: green;
+  /* Give the box an ititial color so we can see it. */
+
+  border: 5px solid red;
+
+  padding: 10px;
+  /* The padding also appears inside the box/border. */
+
+  margin: 20px;
+  /* The margin appear outside the box. */
+
+  border-radius: 10px;
+  /* Creates a box with rounded corners. */
+
+  box-shadow: -4px -4px black;
+  /* Use - to move the shading to the other borders */
+}
+
+/* the border, padding, margin, and radius can be applied to all sides, or to the top, right, bottom or left as required. */
+
+/* When all the boxes are the same, except for one / two properties, create one box and add 4 divs with the same class. */
+
+.quotebox {
+  width: 400px;
+  height: 100px;
+  /* Don't add the property that changes - in this case the background-color */
+
+  border: 2px solid black;
+  padding: 10px;
+  margin: auto; /* To center the boxes - then add any other margins for individual sides after. */
+  margin-bottom: 10px;
+}
+
+/*  Any differences are done with id's - since I cannot add two classes to the same object. */
+
+#quoteorange {
+  background-color: orange;
+}
+
+#quoteblue {
+  background-color: blue;
+}
+
+#quotegray {
+  background-color: gray;
+}
+
+#quotegreen {
+  background-color: green;
+}
+
+/* Make 3 boxes across the screen. TIP: by default boxes will appear one under the other.  Place them next to each other using the float property. */
+
+.picbox {
+  width: 301px;
+  height: 250px;
+  background-color: lightgreen;
+  /* Add color to see them - remove it later. */
+
+  border-radius: 5px;
+  margin: 10px;
+
+  float: left;
+}

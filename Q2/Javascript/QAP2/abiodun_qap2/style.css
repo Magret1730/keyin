@@ -1,0 +1,23 @@
+body {
+    background-color: aliceblue;
+    margin: 5rem auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 40%;
+    border: "1px solid red";
+}
+
+button {
+    cursor: pointer;
+    border: "1px solid red";
+}
+
+#videoCheckbox {
+    display: inline;
+    border: "1px solid red";
+}

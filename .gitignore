@@ -1,0 +1,35 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Node.js dependencies
+node_modules/
+**/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build and cache
+dist/
+build/
+coverage/
+.cache/
+.tmp/
+
+# VSCode settings
+.vscode/
+
+# Removes large files
+*.mov
+*.mp4
+*.avi
+*.mkv
