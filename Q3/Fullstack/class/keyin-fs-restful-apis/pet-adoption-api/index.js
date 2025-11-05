@@ -20,7 +20,27 @@ let adopters = [
 // GET /pets
 // Retrieve all pets. Allows filtering by species using a query parameter.
 app.get('/pets', (request, response) => {
-    response.json(pets);
+    // const species = request.query.species;
+    // if (!!species) {
+    //     const filteredPets = pets.filter((pet) => pet.species === species);
+    //     return response.json(filteredPets);
+    // } else {
+    //     response.json(pets);
+    //     return
+    // }
+
+    const speciesQueryValue = request.query.species;
+    console.log(`species: ${speciesQueryValue}`);
+    let returnValue = pets;
+
+    if (!!speciesQueryValue) {
+        returnValue = pets.filter((pet) => Array.isArray(speciesQueryValue) ?
+            speciesQueryValue.some((userSpecies) => userSpecies === pet.species) :
+            pet.species === speciesQueryValue
+        );
+    }
+
+    return response.json(returnValue);
 });
 
 // GET /pets/:id
@@ -35,9 +55,9 @@ app.post('/pets', (request, response) => {
 
 });
 
-// PUT /pets/:id/adopt
+// PATCH(PATCH is a partial update while PUT is complete replacement) /pets/:id/adopt
 // Marks a pet as adopted by its ID.
-app.put('/pets/:id/adopt', (request, response) => {
+app.patch('/pets/:id/adopt', (request, response) => {
 
 });
 
