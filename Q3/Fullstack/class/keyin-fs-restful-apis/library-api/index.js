@@ -1,4 +1,5 @@
 const express = require('express');
+const { validateBookId, validateIncomingBookData } = require('./middleware');
 const app = express();
 const PORT = 3000;
 
@@ -36,15 +37,15 @@ app.get('/books', (request, response) => {
 
 // POST /books
 // Adds a new book to the library. Expects title, author, and availableCopies in the request body.
-app.post('/books', (request, response) => {
+app.post('/books', validateIncomingBookData, (request, response) => {
     const userData = request.body;
 
-    const parsedCopies = parseInt(userData.availableCopies);
+    // const parsedCopies = parseInt(userData.availableCopies);
 
-    if (!userData.author || !userData.title || isNaN(parsedCopies) || userData.availableCopies < 0) {
-        response.status(400).json({error: "Books are required to have an author, a title and a positive number of copies available."});
-        return;
-    }
+    // if (!userData.author || !userData.title || isNaN(parsedCopies) || userData.availableCopies < 0) {
+    //     response.status(400).json({error: "Books are required to have an author, a title and a positive number of copies available."});
+    //     return;
+    // }
 
     const newBook = {
         id: books.length + 1,
@@ -59,16 +60,9 @@ app.post('/books', (request, response) => {
 
 // GET /books/:id
 // Returns a specific book by its ID.
-app.get('/books/:id', (request, response) => {
+app.get('/books/:id', validateBookId, (request, response) => {
     const userBookId = parseInt(request.params.id);
-    if (isNaN(userBookId)) {
-        return response.status(400).json({error: `Book ${userBookId} must be a number.`});
-    }
-
     const userRequestBook = books.find((book) => book.id === userBookId);
-    if (!userRequestBook) {
-        return response.status(404).json({error: `A book with id ${userBookId} was not found.`});
-    }
 
     return response.status(200).json(userRequestBook);
 });
@@ -78,10 +72,6 @@ app.get('/books/:id', (request, response) => {
 app.put('/books/:id', (request, response) => {
     const userBookId = parseInt(request.params.id);
     const userData = request.body;
-
-    if (isNaN(userBookId)) {
-        return response.status(400).json({error: `Book ${userBookId} must be a number.`});
-    }
 
     const userRequestBookIndex = books.findIndex((book) => book.id === userBookId);
     if (userRequestBookIndex < 0) {
@@ -103,14 +93,7 @@ app.put('/books/:id', (request, response) => {
 // Deletes a book by its ID.
 app.delete('/books/:id', (request, response) => {
     const userBookId = parseInt(request.params.id);
-    if (isNaN(userBookId)) {
-        return response.status(400).json({error: `Book ${userBookId} must be a number.`});
-    }
-
     const userRequestBookIndex = books.findIndex((book) => book.id === userBookId);
-    if (userRequestBookIndex < 0) {
-        return response.status(404).json({error: `A book with id ${userBookId} was not found.`});
-    }
 
     const bookToDelete = books[userRequestBookIndex];
 
