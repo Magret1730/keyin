@@ -39,7 +39,7 @@ app.post('/register', (request, response) => {
 });
 
 app.get('/login', (request, response) => {
-    const errorMessage = null;
+    const errorMessage = request.query.error;
     return response.render('login', { errorMessage })
 });
 
@@ -47,8 +47,8 @@ app.post('/login', (request, response) => {
     const { username, password } = request.body;
 
     const user = users.find((user) => user.username === username);
-    if (user.password !== password) {
-        
+    if (!user || user.password !== password) {
+        return response.redirect('/login?error=Invalid credentials entered. ');
     }
 
     request.session.username = username;
@@ -62,6 +62,11 @@ app.get('/', (request, response) => {
 });
 
 app.post('/logout', (request, response) => {
+    request.session.destroy((error) => {
+        if (!error) {
+            console.error(error);
+        }
+    });
     return response.redirect('/');
 });
 
