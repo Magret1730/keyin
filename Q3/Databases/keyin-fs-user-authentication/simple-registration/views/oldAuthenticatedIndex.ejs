@@ -11,16 +11,18 @@
 </head>
 <body>
     <main class="main-content">
-        <!-- Show login form if user is not logged in -->
-        <h1>Login or Register</h1>
-        <% if (errorMessage) { %>
-            <p class="error-message"><%= errorMessage %></p>
+        <% if (username) { %>
+            <h1>Welcome to authenticated, <%= username %>!</h1>
+            <form action="/logout" method="POST">
+                <button type="submit">Logout</button>
+            </form>
+        <% } else { %>
+            <h1>Login or Register</h1>
+            <span class="button-container">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </span>
         <% } %>
-        <span class="button-container">
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
-        </span>
     </main>
 </body>
 </html>
- 
