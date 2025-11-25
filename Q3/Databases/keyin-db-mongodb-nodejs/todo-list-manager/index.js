@@ -2,7 +2,24 @@ const mongoose = require('mongoose');
 const process = require('process');
 const command = process.argv[2];
 
+// - Establish a database connection
+// - Create a schema
+// - Create our model
+
+const todoSchema = new mongoose.Schema({
+    task: { type: String, required: true },
+    completed: { type: Boolean, default: false },
+});
+
+// Name of the collection is 'todo_list' and schema is todoSchema and model is 'todo'
+const TodoModel = mongoose.model('todo', todoSchema, "todo_list");
+
 async function addToDo(task) {
+    const newTodo = new TodoModel({
+        task: task,
+    });
+    await newTodo.save();
+    console.log(`Added to-do: "${task}"`);
 }
 
 async function showToDos() {
@@ -59,7 +76,9 @@ async function main() {
     mongoose.connection.close();
 }
 
-main().catch((error) => {
-    console.error(error);
-    mongoose.connection.close();
-});
+mongoose.connect('mongodb://localhost:27017/keyinClassDB')
+    .then(() => main())
+    .catch((error) => {
+        console.error(error);
+        mongoose.connection.close();
+    });
