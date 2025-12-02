@@ -25,7 +25,27 @@ app.get('/', (request, response) => {
 
 // WebSocket route for stock updates
 app.ws('/stocks', (socket) => {
-    
+    // Handle incoming websocket connection
+    // Handle sending the stock proces to each connected socket
+    // Handle receiving data from a socket, aka a new stock to track
+    // Handle disconnecting of a client
+
+    // console.log("Incoming Web socket Connection");
+    clientSockets.push(socket);
+    console.log(`We currently have: ${clientSockets.length} clients connected`);
+
+    // socket.send('Hello!');
+
+    socket.send(
+        JSON.stringify(stockPrices)
+    );
+
+    socket.on('close', () => {
+        const socketIndex = clientSockets.indexOf(socket);
+        if (socketIndex > -1) {
+            clientSockets.splice(socketIndex, 1);
+        }
+    })
 });
 
 // Update stock prices periodically
@@ -33,6 +53,8 @@ setInterval(() => {
     Object.keys(stockPrices).forEach((stock) => {
         stockPrices[stock] += (Math.random() - 0.5) * 10;
     });
+
+    clientSockets.forEach((socket) => socket.send(JSON.stringify(stockPrices)));
 }, 2000);
 
 // Start server
