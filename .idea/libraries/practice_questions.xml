@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="practice-questions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Q2/practice-questions/test.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Q2/practice-questions/practice-questions-2.js.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
