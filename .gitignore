@@ -33,3 +33,12 @@ coverage/
 *.mp4
 *.avi
 *.mkv
+
+# IntelliJ / IDE
+.idea/
+*.iml
+
+# Java build output
+target/
+out/
+
