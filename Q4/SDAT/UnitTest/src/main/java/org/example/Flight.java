@@ -3,9 +3,14 @@ package org.example;
 public class Flight {
     private Aircraft aircraft;
     private String destination;
+    private String origin;
 
     public boolean isComplete() {
-        return aircraft.getStatus().equals("landed-at-gate");
+        if (aircraft.getStatus() != null) {
+            return aircraft.getStatus().equals(Status.LANDED_AT_GATE);
+        }
+
+        return false;
     }
 
     public Aircraft getAircraft() {
@@ -31,7 +36,4 @@ public class Flight {
     public void setOrigin(String origin) {
         this.origin = origin;
     }
-
-    private String origin;
-
 }

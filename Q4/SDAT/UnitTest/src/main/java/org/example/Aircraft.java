@@ -2,6 +2,7 @@ package org.example;
 
 public class Aircraft {
     private String tailNumber;
+    private Status status;
 
     public String getTailNumber() {
         return tailNumber;
@@ -11,15 +12,11 @@ public class Aircraft {
         this.tailNumber = tailNumber;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
-
-    private String status;
-
-
 }
